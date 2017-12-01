@@ -1,0 +1,5 @@
+// Apply Samyang 14mm F2.8 lens to the photo.
+exiftool -LensModel="Samyang 14mm F2.8 IF ED UMC AE Aspherical" -FocalLength="14.0mm" -MaxFocalLength="14.0mm" -MinFocalLength="14.0mm" -MaxApertureValue="2.8" -MinApertureValue="22" -TargetAperture="2.8" -FNumber="2.8" -m -overwrite_original_in_place <path>
+
+// Shift time backwards 1 hour.
+exiftool "-AllDates-=0:0:0 1:0:0" -overwrite_original_in_place <PATH>
